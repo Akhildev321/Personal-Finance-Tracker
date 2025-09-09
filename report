@@ -1,0 +1,55 @@
+Personal Finance Tracker (MySQL)
+📌 Introduction:
+
+The Personal Finance Tracker is a MySQL-based project designed to help users manage their income, expenses, and budgets effectively. This project allows users to insert transactions, categorize them, and generate financial reports such as monthly summaries, account balances, and budget tracking.
+
+🎯 Objective:
+
+Track income and expenses of multiple users.
+
+Categorize spending (e.g., Food, Rent, Travel, Entertainment).
+
+Provide monthly summaries with income, expenses, and net savings.
+
+Check if the spending exceeds a predefined budget.
+
+🛠 Tools Used:
+
+Database: MySQL
+Programming Language: SQL
+
+Database Schema
+
+The project includes the following key tables:
+
+users – stores user information.
+
+accounts – tracks different bank accounts or wallets.
+
+categories – expense/income categories.
+
+income – records income transactions.
+
+expenses – records expense transactions.
+
+budgets – sets monthly category-wise budgets.
+
+🚀 Steps Involved
+
+Database Creation: Created finance_db schema.
+
+Tables: Designed normalized tables for users, accounts, categories, income, expenses, and budgets.
+
+Constraints: Added primary keys, foreign keys, check constraints, and default values.
+
+Sample Data: Inserted test data for users, accounts, transactions, and budgets.
+
+Triggers: Implemented triggers to update account balances after income/expense inserts.
+
+Views & Reports:
+
+v_account_balance: current balance per account.
+
+v_monthly_summary: income, expense, and net savings for each month.
+
+v_budget_status: budget vs actual spending, with over-budget flag.
